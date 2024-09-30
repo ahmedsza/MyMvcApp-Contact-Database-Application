@@ -20,7 +20,7 @@ namespace MyMvcApp.Controllers
                 return View(userlist);
             }
 
-            var filteredUsers = userlist.Where(u => de).ToList();
+            var filteredUsers = userlist.Where(u => u.Name.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)).ToList();
             return View(filteredUsers);
         }
 
