@@ -10,6 +10,7 @@
     <GenerateAssemblyFileTitleAttribute>false</GenerateAssemblyFileTitleAttribute>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
     <GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
 
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
