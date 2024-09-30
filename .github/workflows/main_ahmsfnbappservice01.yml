@@ -25,13 +25,13 @@ jobs:
         run: dotnet build --configuration Release
 
       - name: dotnet publish
-        run: dotnet publish -c Release -o D:\a\MyMvcApp-Contact-Databse-Application\MyMvcApp-Contact-Database-Application\bin\Release\net8.0\MyMvcApp
+        run: dotnet publish -c Release -o D:\a\MyMvcApp-Contact-Database-Application\MyMvcApp-Contact-Database-Application\bin\Release\net8.0\MyMvcApp
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: .net-app
-          path: D:\a\MyMvcApp-Contact-Databse-Application\MyMvcApp-Contact-Database-Application\bin\Release\net8.0\MyMvcApp
+          path: D:\a\MyMvcApp-Contact-Database-Application\MyMvcApp-Contact-Database-Application\bin\Release\net8.0\MyMvcApp
 
   deploy:
     runs-on: ubuntu-latest
